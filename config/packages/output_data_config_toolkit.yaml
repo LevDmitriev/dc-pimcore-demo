@@ -1,0 +1,16 @@
+output_data_config_toolkit:
+    tab_options:
+        # order classes by name (defaults by id)
+        order_by_name: true
+        # classes that should be listed by default in output config tab
+        default_classes:
+            - Car                                   # class name
+
+        classification_store:
+            # defines which classification keys are displayed in the config dialog tree
+            # the possible values are:
+            #   'all',       -> always show all keys
+            #   'object',    -> only show keys which are in any assigned group of the current object
+            #   'relevant',  -> use 'object' mode if any group is assigned, else show all keys (i.e. on a folder)
+            #   'none'       -> do not show classification store keys
+            display_mode: relevant
